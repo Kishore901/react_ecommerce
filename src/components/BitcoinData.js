@@ -5,7 +5,13 @@ const BitcoinData = () => {
   // const finalURL = `https://cors-anywhere.herokuapp.com/${URL}`;
   const [data, setdata] = useState(null);
   useEffect(() => {
-    fetch(URL)
+    fetch(URL, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Credentials': true,
+      },
+    })
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
