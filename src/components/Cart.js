@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import { useEffect, useState } from 'react';
-import BitcoinData from './BitcoinData';
+// import BitcoinData from './BitcoinData';
 import Footer from './Footer';
 
 const Cart = ({ data }) => {
@@ -87,8 +87,8 @@ const Cart = ({ data }) => {
           </div>
         )}
       </div>
-      <div className={`${cart && 'mt-10'}`}>
-        <BitcoinData />
+      <div className={`${cart && 'mt-20'}`}>
+        {/* <BitcoinData /> */}
         <Footer />
       </div>
     </div>

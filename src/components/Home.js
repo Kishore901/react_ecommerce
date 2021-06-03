@@ -2,7 +2,7 @@ import Cards from './Cards';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { data } from '../data/price';
-import BitcoinData from './BitcoinData';
+// import BitcoinData from './BitcoinData';
 
 const Home = () => {
   return (
@@ -33,7 +33,7 @@ const Home = () => {
         {/* Cards go here */}
         <Cards data={data} />
       </section>
-      <BitcoinData />
+      {/* <BitcoinData /> */}
       <Footer />
     </>
   );
