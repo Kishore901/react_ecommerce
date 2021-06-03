@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 const BitcoinData = () => {
   const API_KEY = process.env.REACT_APP_APIKEY;
-  const URL = `https://api.nomics.com/v1/currencies/ticker?key=${API_KEY}&ids=BTC,ETH,DOGE`;
+  const URL = `/v1/currencies/ticker?key=${API_KEY}&ids=BTC,ETH,DOGE`;
   const [data, setdata] = useState(null);
   useEffect(() => {
     fetch(URL, {
