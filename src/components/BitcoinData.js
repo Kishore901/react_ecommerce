@@ -16,7 +16,8 @@ const BitcoinData = () => {
       .then((data) => {
         console.log(data);
         setdata(data);
-      });
+      })
+      .catch((err) => console.log(err.response));
   }, []);
 
   return (
