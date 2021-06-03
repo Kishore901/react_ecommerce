@@ -4,7 +4,9 @@ const BitcoinData = () => {
   const URL = `https://api.nomics.com/v1/currencies/ticker?key=${API_KEY}&ids=BTC,ETH,DOGE`;
   const [data, setdata] = useState(null);
   useEffect(() => {
-    fetch(URL)
+    fetch(URL, {
+      mode: 'no-cors',
+    })
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
