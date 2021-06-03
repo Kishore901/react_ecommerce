@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 const BitcoinData = () => {
   const API_KEY = process.env.REACT_APP_APIKEY;
   const URL = `https://api.nomics.com/v1/currencies/ticker?key=${API_KEY}&ids=BTC,ETH,DOGE`;
-  const finalURL = `https://cors-anywhere.herokuapp.com/${URL}`;
+  // const finalURL = `https://cors-anywhere.herokuapp.com/${URL}`;
   const [data, setdata] = useState(null);
   useEffect(() => {
-    fetch(finalURL)
+    fetch(URL)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
