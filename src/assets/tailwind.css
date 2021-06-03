@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .card {
+    @apply bg-white rounded overflow-hidden shadow-md relative;
+  }
+  .mdNav {
+    @apply hidden md:block text-xl items-center cursor-pointer hover:text-gray-900;
+  }
+  .quantBtn {
+    @apply ring-2 ring-primary px-1 rounded-full hover:bg-primary hover:text-white focus:outline-none;
+  }
+}
